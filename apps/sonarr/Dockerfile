@@ -33,6 +33,7 @@ RUN \
 
 COPY . /
 
+# Use a lower UID/GID by default. Makes podman rootless much easier to deal with.
 USER 1001:1001
 WORKDIR /config
 VOLUME ["/config"]
