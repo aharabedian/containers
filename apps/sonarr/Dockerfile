@@ -33,7 +33,7 @@ RUN \
 
 COPY . /
 
-USER nobody:nogroup
+USER 1001:1001
 WORKDIR /config
 VOLUME ["/config"]
 
